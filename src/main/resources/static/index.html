@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<p>Calendar API</p>
+		<p> WARNING: THIS API USES IN-MEMORY DATABASE. ALL DATA IS LOST WHEN APPLICATION IS SHUTDOWN! </p>
+		<p>Usage:</p>
+		<a href="/events">/events (GET) - Get all stored events </a>
+		<p> /events (POST) Save new event as JSON. Fields:</p>
+		<ul>
+			<li>name - Text</li>
+			<li>length - Numeric</li>
+			<li>date - (Format: yyyy.MM.dd HH:mm)
+		</ul>
+		<p> Additional Search features for /events (GET). Used as query parameters. All parameters can be used individually or as a combination </p>
+		<ul>
+			<li>?year</li>
+			<li>?month</li>
+			<li>?day</li>
+			<li>?time (Format: HH:mm)</li>
+		</ul>
+		
+		<a href="/eventsbyname?name=namehere"> /eventsbyname?name (GET) finds all events by a name </a>
+		<p> </p>
+		<a href="/eventsongoing"> /eventsongoing (GET) finds all ongoing events </a>
+		
+	</body>
+</html>
